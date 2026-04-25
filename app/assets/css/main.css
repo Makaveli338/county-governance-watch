@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Cabin', ui-sans-serif, system-ui, sans-serif;
+
+  /* Primary colors */
+  --color-primary: #235F46;
+  --color-primary-100: #002519;
+  --color-primary-200: #003326;
+  --color-primary-300: #004033;
+  --color-primary-400: #005040;
+  --color-primary-500: #064E3B;
+  --color-primary-600: #14694F;
+  --color-primary-700: #1B7F61;
+  --color-primary-800: #219773;
+  --color-primary-900: #2DBE8B;
+
+  /* Secondary colors */
+  --color-secondary: #D6B15E;
+  --color-secondary-100: #3D2F10;
+  --color-secondary-200: #654F1A;
+  --color-secondary-300: #8E6E25;
+  --color-secondary-400: #BF9431;
+  --color-secondary-500: #D6B15E;
+  --color-secondary-600: #DEC17D;
+  --color-secondary-700: #E6D09E;
+  --color-secondary-800: #EDDEBA;
+  --color-secondary-900: #F5ECD7;
+}
+
+.body {
+  font-family: "Cabin", sans-serif;
+  font-optical-sizing: auto;
+}
+
+
+@layer components {
+  .text {
+    @apply text-[#1F2A2A]
+  }
+  .title {
+    @apply text-2xl font-bold text-[#092443];
+  }
+  .subtitle {
+    @apply text-sm font-semibold text-gray-900;
+  }
+  .link {
+    @apply text-[#515F74] hover:text-primary-300 font-medium text-sm !no-underline hover:!underline;
+  }
+
+  button {
+    @apply transition-all ease-in-out duration-150 w-fit !cursor-pointer;
+  }
+
+  .primary-btn {
+    @apply bg-secondary hover:bg-secondary-400 p-3 rounded-full font-semibold text-white capitalize flex gap-x-2 items-center justify-center whitespace-nowrap hover:shadow;
+  }
+
+   .secondary-btn {
+    @apply bg-primary hover:bg-primary-400 p-3 rounded-full font-semibold text-white capitalize flex gap-x-2 items-center justify-center whitespace-nowrap hover:shadow;
+  }
+  .outlined-btn {
+    @apply bg-white border hover:bg-gray-200 py-2 px-3 border-[#D0D5DD] text-[#344054] rounded-lg text-sm font-medium capitalize flex gap-x-2 items-center justify-center hover:shadow disabled:!cursor-not-allowed;
+  }
+
+  .disabled-btn {
+    @apply border-neutral-200 !cursor-not-allowed text-white bg-neutral-200 whitespace-nowrap py-2 px-4 border rounded-lg text-sm font-semibold capitalize flex gap-x-2 items-center justify-center hover:shadow;
+  }
+
+  .error-btn {
+    @apply bg-red-600 hover:bg-red-700 disabled:border-neutral-200 disabled:cursor-not-allowed disabled:text-white disabled:bg-neutral-200 whitespace-nowrap py-2 px-4 border-0 rounded-lg text-sm font-semibold text-white capitalize flex gap-x-2 items-center justify-center hover:shadow;
+  }
+
+  input[type="text"]:not(.m-input-input),
+  input[type="email"],
+  input[type="number"],
+  input[type="date"],
+  input[type="datetime-local"],
+  input[type="password"],
+  input[type="tel"]:not(.m-input-input),
+  input[type="search"] {
+    @apply block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-[#D0D5DD] placeholder:text-gray-400 placeholder:text-sm focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6 disabled:!ring-0 disabled:cursor-not-allowed;
+  }
+
+  .input {
+    @apply h-9 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900 placeholder-gray-400 inline-flex w-full rounded-md border-0 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-sm sm:text-sm sm:leading-6 disabled:!ring-0 disabled:cursor-not-allowed;
+  }
+
+  input[type="checkbox"] {
+    @apply w-4 h-4 rounded border-gray-300 accent-primary focus:ring-primary;
+  }
+
+  input[type="radio"] {
+    @apply w-4 h-4 rounded border-gray-300 accent-primary focus:ring-primary;
+  }
+
+  textarea {
+    @apply block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-[#D0D5DD] placeholder:text-gray-400 placeholder:text-sm focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6;
+  }
+
+  input::placeholder {
+    @apply capitalize;
+  }
+}
+
+.section{
+    max-width: 1320px;
+}
