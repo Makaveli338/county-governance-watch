@@ -31,10 +31,10 @@
           <img src="/image1.png" alt="Speech" class="h-37.5 sm:h-auto w-full" />
 
           <div
-            class="rounded-2xl px-6 bg-[#6F8F88] py-4 sm:py-8 text-white text-xl h-37.5 sm:h-auto"
+            class="rounded-2xl px-6 bg-[#6F8F88] py-4 sm:py-8 text-white text-lg sm:text-xl h-37.5 sm:h-auto"
           >
             <p class="leading-6.5">
-              <span class="text-4xl font-semibold">33</span> /47
+              <span class="text-2xl lg:text-4xl font-semibold">33</span> /47
             </p>
             <p>Counties covered by our operation</p>
           </div>
