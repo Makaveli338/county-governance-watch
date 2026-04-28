@@ -1,10 +1,10 @@
 <template>
   <section
-    class="bg-[#F4F8F7] h-full w-full pt-8 space-y-8 sm:space-y-13.5 text-white pb-13.5"
+    class="bg-[#F4F8F7] h-full w-full pt-8 space-y-8 sm:space-y-13.5 text-white pb-13.5 overflow-x-clip"
   >
     <Header />
     <!--Top hero section-->
-    <div class="section mx-auto px-6">
+    <div class="section mx-auto px-6 overflow-x-clip">
       <!--Text container-->
       <div class="mx-auto max-w-4xl text-center">
         <div class="space-y-4">
@@ -111,7 +111,7 @@
     </div>
 
     <!--About our organization-->
-    <div class="space-y-6 section mx-auto px-6">
+    <div class="space-y-6 section mx-auto px-6 overflow-x-clip">
       <div class="flex justify-between flex-col sm:flex-row gap-4">
         <div class="space-y-2.5">
           <p class="text-primary font-medium text-xl sm:text-2xl">
@@ -191,7 +191,7 @@
     </div>
 
     <!--Our core values-->
-    <div class="space-y-13.5">
+    <div class="space-y-13.5 overflow-x-clip">
       <div
         data-aos="fade-up"
         data-aos-delay="200"
