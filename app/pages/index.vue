@@ -1,14 +1,14 @@
 <template>
   <section
-    class="bg-[#F4F8F7] h-full w-full pt-8 space-y-13.5 text-white pb-13.5"
+    class="bg-[#F4F8F7] h-full w-full pt-8 space-y-8 sm:space-y-13.5 text-white pb-13.5"
   >
     <Header />
     <!--Top hero section-->
-    <div class="section mx-auto">
+    <div class="section mx-auto px-6">
       <!--Text container-->
       <div class="mx-auto max-w-4xl text-center">
         <div class="space-y-4">
-          <h2 class="font-semibold text-4xl text">
+          <h2 class="font-semibold text-3xl sm:text-4xl text">
             <span class="text-primary"> Empowering</span> Citizens,
             <span class="text-secondary"> Strengthening</span> County
             Governance.
@@ -20,15 +20,19 @@
           </p>
         </div>
 
-        <button class="primary-btn mx-auto mt-6">Donate</button>
+        <button class="primary-btn mx-auto mt-6 hover:-translate-y-1">
+          Donate
+        </button>
       </div>
 
-      <div class="grid sm:grid-cols-5 gap-4 items-end -mt-12">
+      <div class="grid sm:grid-cols-5 gap-4 items-end sm:-mt-12 mt-4">
         <!-- -->
-        <div class="col-span-1 h-fit space-y-2.5">
-          <img src="/image1.png" alt="Speech" />
+        <div class="col-span-1 grid grid-cols-2 sm:grid-cols-1 gap-2.5 h-fit">
+          <img src="/image1.png" alt="Speech" class="h-37.5 sm:h-auto w-full" />
 
-          <div class="rounded-2xl px-6 bg-[#6F8F88] py-8 text-white text-xl">
+          <div
+            class="rounded-2xl px-6 bg-[#6F8F88] py-4 sm:py-8 text-white text-xl h-37.5 sm:h-auto"
+          >
             <p class="leading-6.5">
               <span class="text-4xl font-semibold">33</span> /47
             </p>
@@ -37,12 +41,32 @@
         </div>
 
         <!-- -->
-        <div class="col-span-1 object-bottom">
-          <img src="/image2.png" alt="tug of war" />
+        <div
+          class="col-span-1 object-bottom grid grid-cols-12 items-stretch sm:block"
+        >
+          <!-- -->
+          <div class="col-span-8 p-6 rounded-2xl bg-[#E3ECE9] text-primary">
+            <p
+              class="text-xl font-semibold text-center leading-7.5 col-span-1 block sm:hidden"
+            >
+              Join 1000+ <br />
+              people <br />
+              building a <br />
+              better <br />
+              tommorrow
+            </p>
+          </div>
+          <img
+            src="/image2.png"
+            alt="tug of war"
+            class="col-span-4 h-full object-cover rounded-2xl"
+          />
         </div>
 
         <!-- -->
-        <div class="col-span-1 p-6 rounded-2xl bg-[#E3ECE9] text-primary">
+        <div
+          class="col-span-1 p-6 rounded-2xl bg-[#E3ECE9] text-primary hidden sm:block"
+        >
           <p class="text-xl font-semibold text-center leading-7.5">
             Join 1000+ <br />
             people <br />
@@ -53,55 +77,68 @@
         </div>
 
         <!-- -->
-        <div class="col-span-1 object-bottom">
+        <div class="col-span-1 object-bottom hidden sm:block">
           <img src="/image3.png" alt="civil education" />
         </div>
 
         <!-- -->
-        <div class="col-span-1 h-fit space-y-2.5">
+        <div class="col-span-1 h-fit flex flex-col gap-2.5">
           <div
-            class="rounded-2xl px-10 bg-primary py-6 text-white text-xl h-53.75"
+            class="rounded-2xl px-10 bg-primary py-6 text-white text-xl h-fit sm:h-53.75 order-2 sm:order-1"
           >
-            <p class="leading-7.5">
+            <p class="leading-7.5 hidden sm:block">
               Where citizens <br />
               shape <br />
               governance <br />
               and service <br />
               delivery.
             </p>
+
+            <p class="leading-7.5 sm:hidden block text-center">
+              Where citizens shape <br />
+              governance and service <br />
+              delivery.
+            </p>
           </div>
 
-          <img src="/Image4.png" alt="hands" />
+          <img
+            src="/Image4.png"
+            alt="hands"
+            class="h-25 sm:h-full w-full object-cover rounded-2xl order-1 sm:order-2"
+          />
         </div>
       </div>
     </div>
 
     <!--About our organization-->
-    <div class="space-y-6 section mx-auto">
-      <div class="flex justify-between">
+    <div class="space-y-6 section mx-auto px-6">
+      <div class="flex justify-between flex-col sm:flex-row gap-4">
         <div class="space-y-2.5">
-          <p class="text-primary font-medium text-2xl">
+          <p class="text-primary font-medium text-xl sm:text-2xl">
             About <br />
             Our Organization
           </p>
           <div class="w-20 bg-secondary h-1.5 rounded-full"></div>
         </div>
 
-        <p class="text-[#6F8F88] max-w-md text-lg">
+        <p
+          data-aos="fade-left"
+          class="text-[#6F8F88] max-w-md text-sm sm:text-lg"
+        >
           We promote transparent, accountable county governance by empowering
           citizens and strengthening public participation across Kenya’s
           devolved units.
         </p>
       </div>
 
-      <div class="grid grid-cols-12 gap-6 min-h-[420px]">
+      <div data-aos="fade-up" class="grid grid-cols-12 gap-6 min-h-105">
         <!-- LEFT: Image -->
-        <div class="col-span-8 rounded-2xl overflow-hidden">
+        <div class="col-span-full sm:col-span-8 rounded-2xl overflow-hidden">
           <div
-            class="bg-[url(/image5.png)] bg-cover bg-center h-full w-full px-6 pb-7 flex items-end"
+            class="bg-[url(/image5.png)] bg-cover bg-center h-full w-full px-6 pb-7 flex items-end pt-32"
           >
-            <div class="space-y-4 text-white">
-              <p class="text-lg font-medium">Our Story</p>
+            <div class="space-y-2.5 sm:space-y-4 text-white">
+              <p class="text-base sm:text-lg font-medium">Our Story</p>
 
               <div class="space-y-2 text-sm max-w-[90%]">
                 <p>
@@ -125,7 +162,9 @@
         </div>
 
         <!-- RIGHT: Cards -->
-        <div class="col-span-4 flex flex-col gap-6 h-full text">
+        <div
+          class="col-span-full sm:col-span-4 flex flex-col gap-2.5 sm:gap-6 h-full text"
+        >
           <!-- Mission -->
           <div class="flex-1 rounded-2xl bg-[#E1F4EC] px-6 py-6 flex items-end">
             <div class="space-y-2">
@@ -153,9 +192,15 @@
 
     <!--Our core values-->
     <div class="space-y-13.5">
-      <div class="max-w-3xl mx-auto space-y-3 text-center">
-        <p class="text-xl text-primary font-medium">Our Core Values</p>
-        <p class="font-medium text-[#6F8F88]">
+      <div
+        data-aos="fade-up"
+        data-aos-delay="200"
+        class="max-w-3xl mx-auto space-y-2.5 sm:space-y-3 text-center"
+      >
+        <p class="text-lg sm:text-xl text-primary font-medium">
+          Our Core Values
+        </p>
+        <p class="font-medium text-[#6F8F88] text-sm sm:text-base">
           At CGW, our <span class="text-primary"> values</span> are not just
           words; they are the guiding principles that define our character and
           drive our actions. We embody a culture represented by the acronym
@@ -169,58 +214,97 @@
       </div>
 
       <!--Key areas to focus on-->
-      <div class="bg-primary w-full py-11.5 px-14">
+      <div class="bg-primary w-full py-8 sm:py-11.5 px-8 sm:px-14">
         <div class="section mx-auto space-y-8">
           <div class="space-y-2.5 text-center">
-            <p class="text-xl font-medium">
+            <p class="text-lg sm:text-xl font-medium">
               Key Areas of <span class="text-secondary"> Focus</span>
             </p>
-            <p>
+            <p class="text-sm sm:text-base">
               The core thematic areas that shape our programs and priorities.
             </p>
           </div>
 
-          <div class="grid grid-cols-7 gap-2.5 text-primary">
+          <div class="grid sm:grid-cols-7 gap-2.5 text-primary">
             <!-- -->
             <div
-              class="bg-white rounded-2xl relative overflow-hidden min-h-67.5 flex items-end px-3 py-13 hover:scale-105 transition-all duration-150 cursor-pointer"
+              class="bg-white rounded-2xl relative overflow-hidden h-25 sm:min-h-67.5 flex items-center sm:items-end sm:px-3 py-13 hover:scale-105 gap-6 sm:gap-0 transition-all duration-150 cursor-pointer"
             >
-              <img src="/circle1.png" alt="" class="absolute top-0 left-0" />
-              <p class="relative leading-5">
+              <img
+                src="/circle1.png"
+                alt=""
+                class="absolute top-0 left-0 hidden sm:block"
+              />
+              <img src="/mobile1.png" alt="" class="h-25 block sm:hidden" />
+
+              <p class="relative leading-5 hidden sm:block">
                 Devolution <br />
                 & <br />
+                County Participation
+              </p>
+
+              <p class="relative leading-5 sm:hidden block">
+                Devolution & <br />
                 County Participation
               </p>
             </div>
             <!-- -->
             <div
-              class="bg-white rounded-2xl relative overflow-hidden min-h-67.5 flex items-end px-3 py-13 hover:scale-105 transition-all duration-150 cursor-pointer"
+              class="bg-white rounded-2xl relative overflow-hidden h-25 sm:min-h-67.5 flex items-center gap-6 sm:gap-0 px-0 sm:items-end sm:px-3 py-13 hover:scale-105 transition-all duration-150 cursor-pointer"
             >
-              <img src="/circle2.png" alt="" class="absolute top-0 left-0" />
-              <p class="relative leading-5">
+              <img
+                src="/circle2.png"
+                alt=""
+                class="absolute top-0 left-0 hidden sm:block"
+              />
+              <img src="/mobile2.png" alt="" class="h-25 block sm:hidden" />
+
+              <p class="relative leading-5 hidden sm:block">
                 Inclusive <br />
                 Governance & <br />
                 Disability Rights
+              </p>
+
+              <p class="relative leading-5 sm:hidden block">
+                Inclusive Governance <br />
+                & Disability Rights
               </p>
             </div>
 
             <!-- -->
             <div
-              class="bg-white rounded-2xl relative overflow-hidden min-h-67.5 flex items-end px-3 py-13 hover:scale-105 transition-all duration-150 cursor-pointer"
+              class="bg-white rounded-2xl relative overflow-hidden h-25 sm:min-h-67.5 flex items-center gap-6 sm:gap-0 px-0 sm:items-end sm:px-3 py-13 hover:scale-105 transition-all duration-150 cursor-pointer"
             >
-              <img src="/circle3.png" alt="" class="absolute top-0 left-0" />
-              <p class="relative leading-5">
+              <img
+                src="/circle3.png"
+                alt=""
+                class="absolute top-0 left-0 hidden sm:block"
+              />
+              <img src="/mobile3.png" alt="" class="h-25 block sm:hidden" />
+
+              <p class="relative leading-5 hidden sm:block">
                 Peace <br />
                 & <br />
+                Human Security
+              </p>
+
+              <p class="relative leading-5 sm:hidden block">
+                Peace & <br />
                 Human Security
               </p>
             </div>
 
             <!-- -->
             <div
-              class="bg-white rounded-2xl relative overflow-hidden min-h-67.5 flex items-end px-3 py-13 hover:scale-105 transition-all duration-150 cursor-pointer"
+              class="bg-white rounded-2xl relative overflow-hidden h-25 sm:min-h-67.5 flex items-center gap-6 sm:gap-0 px-0 sm:items-end sm:px-3 py-13 hover:scale-105 transition-all duration-150 cursor-pointer"
             >
-              <img src="/circle4.png" alt="" class="absolute top-0 left-0" />
+              <img
+                src="/circle4.png"
+                alt=""
+                class="absolute top-0 left-0 hidden sm:block"
+              />
+              <img src="/mobile4.png" alt="" class="h-25 block sm:hidden" />
+
               <p class="relative leading-5">
                 Governance <br />
                 Performance <br />
@@ -230,9 +314,15 @@
 
             <!-- -->
             <div
-              class="bg-white rounded-2xl relative overflow-hidden min-h-67.5 flex items-end px-3 py-13 hover:scale-105 transition-all duration-150 cursor-pointer"
+              class="bg-white rounded-2xl relative overflow-hidden h-25 sm:min-h-67.5 flex items-center gap-6 sm:gap-0 px-0 sm:items-end sm:px-3 py-13 hover:scale-105 transition-all duration-150 cursor-pointer"
             >
-              <img src="/circle5.png" alt="" class="absolute top-0 left-0" />
+              <img
+                src="/circle5.png"
+                alt=""
+                class="absolute top-0 left-0 hidden sm:block"
+              />
+              <img src="/mobile5.png" alt="" class="h-25 block sm:hidden" />
+
               <p class="relative leading-5">
                 Elections <br />
                 & <br />
@@ -242,9 +332,15 @@
 
             <!-- -->
             <div
-              class="bg-white rounded-2xl relative overflow-hidden min-h-67.5 flex items-end px-3 py-13 hover:scale-105 transition-all duration-150 cursor-pointer"
+              class="bg-white rounded-2xl relative overflow-hidden h-25 sm:min-h-67.5 flex items-center gap-6 sm:gap-0 px-0 sm:items-end sm:px-3 py-13 hover:scale-105 transition-all duration-150 cursor-pointer"
             >
-              <img src="/circle6.png" alt="" class="absolute top-0 left-0" />
+              <img
+                src="/circle6.png"
+                alt=""
+                class="absolute top-0 left-0 hidden sm:block"
+              />
+              <img src="/mobile6.png" alt="" class="h-25 block sm:hidden" />
+
               <p class="relative leading-5">
                 Youth & <br />
                 Women <br />
@@ -254,9 +350,15 @@
 
             <!-- -->
             <div
-              class="bg-white rounded-2xl relative overflow-hidden min-h-67.5 flex items-end px-3 py-13 hover:scale-105 transition-all duration-150 cursor-pointer"
+              class="bg-white rounded-2xl relative overflow-hidden h-25 sm:min-h-67.5 flex items-center gap-6 sm:gap-0 px-0 sm:items-end sm:px-3 py-13 hover:scale-105 transition-all duration-150 cursor-pointer"
             >
-              <img src="/circle7.png" alt="" class="absolute top-0 left-0" />
+              <img
+                src="/circle7.png"
+                alt=""
+                class="absolute top-0 left-0 hidden sm:block"
+              />
+              <img src="/mobile7.png" alt="" class="h-25 block sm:hidden" />
+
               <p class="relative leading-5">
                 Climate <br />
                 Action
@@ -268,15 +370,44 @@
     </div>
 
     <!--Meet our team-->
-    <div class="space-y-16">
+    <div class="sm:space-y-16 space-y-5">
       <div class="w-full text-center flex flex-col items-center gap-2.5">
-        <p class="text-2xl font-medium text-primary">Meet Our Team</p>
+        <p class="text-xl sm:text-2xl font-medium text-primary">
+          Meet Our Team
+        </p>
         <div class="w-20 bg-secondary h-1.5 rounded-full"></div>
       </div>
 
-      <div class="space-y-6 max-w-250 mx-auto">
+      <div class="space-y-2.5 sm:space-y-6 max-w-250 mx-auto px-5 sm:px-0">
+        <div class="space-y-2.5 sm:hidden flex flex-col items-center">
+          <img src="/exec.png" alt="Executive Director" class="h-37.5" />
+
+          <div class="space-y-3 text-center">
+            <div class="space-y-1.5">
+              <p class="text-base sm:text-lg text-primary font-medium">
+                Kevin Osido, OGW
+              </p>
+              <p class="text text-xs sm:text-sm leading-3">
+                Executive Director
+              </p>
+            </div>
+
+            <div class="flex gap-1.5 justify-center">
+              <a href="">
+                <img src="/x.svg" alt="" class="h-5 w-5" />
+              </a>
+
+              <a href="">
+                <img src="/linkedin.svg" alt="" class="h-5 w-5" />
+              </a>
+            </div>
+          </div>
+        </div>
+
         <!-- Executive Director-->
-        <div class="bg-white rounded-[20px] py-9 pr-18.5 pl-24 flex gap-14">
+        <div
+          class="bg-white rounded-[20px] sm:py-9 sm:pr-18.5 sm:pl-24 py-4 px-5 flex gap-14 sm:hover:scale-105 cursor-pointer duration-200 transition-all"
+        >
           <!--Text container-->
           <div
             class="gap-2.5 text-sm leading-5.5 text flex flex-col justify-center"
@@ -290,7 +421,7 @@
               public participation to improve governance, accountability, and
               service delivery.
             </p>
-            <p>
+            <p class="hidden sm:block">
               Kevin holds a Master of Science in Governance and has extensive
               experience working with national and county governments,
               development partners, and community networks. A Governance
@@ -302,7 +433,7 @@
             </p>
           </div>
 
-          <div class="space-y-2.5 -mt-16">
+          <div class="space-y-2.5 -mt-16 hidden sm:block">
             <img src="/exec.png" alt="Executive Director" />
 
             <div class="space-y-3 text-center">
@@ -325,52 +456,56 @@
         </div>
 
         <!--Team members-->
-        <div class="flex gap-4 mx-auto">
-          <!-- -->
-          <div
-            class="bg-white border-[#ECECEC] rounded-2xl relative overflow-hidden h-82.5 w-59.5 flex items-end px-6 pb-9 transition-all duration-150 cursor-pointer"
-          >
-            <img src="/programs.png" alt="" class="absolute top-0 left-0" />
+        <div class="flex flex-col sm:flex-row gap-2.5 sm:gap-4 mx-auto mt-2">
+          <div class="flex gap-4">
+            <!-- -->
+            <div
+              class="bg-white border-[#ECECEC] rounded-2xl relative overflow-hidden h-82.5 w-59.5 flex items-end px-6 pb-9 transition-all duration-150 cursor-pointer"
+            >
+              <img src="/programs.png" alt="" class="absolute top-0 left-0" />
 
-            <div class="space-y-2.5">
-              <p class="text-xl text-primary font-medium">Edna K. Miriti</p>
-              <p class="text-sm text">Programs Officer</p>
+              <div class="space-y-2.5">
+                <p class="text-xl text-primary font-medium">Edna K. Miriti</p>
+                <p class="text-sm text">Programs Officer</p>
+              </div>
+            </div>
+
+            <!-- -->
+            <div
+              class="bg-white border-[#ECECEC] rounded-2xl relative overflow-hidden h-82.5 w-59.5 flex items-end px-6 pb-9 transition-all duration-150 cursor-pointer"
+            >
+              <img src="/programs2.png" alt="" class="absolute top-0 left-0" />
+
+              <div class="space-y-2.5">
+                <p class="text-xl text-primary font-medium">Daniel Muia</p>
+                <p class="text-sm text">Programs Officer</p>
+              </div>
             </div>
           </div>
 
-          <!-- -->
-          <div
-            class="bg-white border-[#ECECEC] rounded-2xl relative overflow-hidden h-82.5 w-59.5 flex items-end px-6 pb-9 transition-all duration-150 cursor-pointer"
-          >
-            <img src="/programs2.png" alt="" class="absolute top-0 left-0" />
+          <div class="flex gap-4">
+            <!-- -->
+            <div
+              class="bg-white border-[#ECECEC] rounded-2xl relative overflow-hidden h-82.5 w-59.5 flex items-end px-6 pb-9 transition-all duration-150 cursor-pointer"
+            >
+              <img src="/programs3.png" alt="" class="absolute top-0 left-0" />
 
-            <div class="space-y-2.5">
-              <p class="text-xl text-primary font-medium">Daniel Muia</p>
-              <p class="text-sm text">Programs Officer</p>
+              <div class="space-y-2.5">
+                <p class="text-xl text-primary font-medium">Hawi Rapudo</p>
+                <p class="text-sm text">Programs Officer</p>
+              </div>
             </div>
-          </div>
 
-          <!-- -->
-          <div
-            class="bg-white border-[#ECECEC] rounded-2xl relative overflow-hidden h-82.5 w-59.5 flex items-end px-6 pb-9 transition-all duration-150 cursor-pointer"
-          >
-            <img src="/programs3.png" alt="" class="absolute top-0 left-0" />
+            <!-- -->
+            <div
+              class="bg-white border-[#ECECEC] rounded-2xl relative overflow-hidden h-82.5 w-59.5 flex items-end px-6 pb-9 transition-all duration-150 cursor-pointer"
+            >
+              <img src="/programs4.png" alt="" class="absolute top-0 left-0" />
 
-            <div class="space-y-2.5">
-              <p class="text-xl text-primary font-medium">Hawi Rapudo</p>
-              <p class="text-sm text">Programs Officer</p>
-            </div>
-          </div>
-
-          <!-- -->
-          <div
-            class="bg-white border-[#ECECEC] rounded-2xl relative overflow-hidden h-82.5 w-59.5 flex items-end px-6 pb-9 transition-all duration-150 cursor-pointer"
-          >
-            <img src="/programs4.png" alt="" class="absolute top-0 left-0" />
-
-            <div class="space-y-2.5">
-              <p class="text-xl text-primary font-medium">Romeo Odumbe</p>
-              <p class="text-sm text">Programs Officer</p>
+              <div class="space-y-2.5">
+                <p class="text-xl text-primary font-medium">Romeo Odumbe</p>
+                <p class="text-sm text">Programs Officer</p>
+              </div>
             </div>
           </div>
         </div>
@@ -378,15 +513,15 @@
     </div>
 
     <!--Posts-->
-    <div class="section mx-auto space-y-6">
+    <div class="section mx-auto space-y-6 px-6">
       <div class="w-full text-center flex flex-col items-center gap-2.5">
         <p class="text-2xl font-medium text-primary">Posts</p>
         <div class="w-20 bg-secondary h-1.5 rounded-full"></div>
       </div>
 
-      <div class="grid grid-cols-5 gap-4">
+      <div class="flex gap-4 sm:grid sm:grid-cols-5 overflow-x-auto sm:overflow-x-clip pb-2">
         <!---->
-        <div class="bg-white border rounded-2xl border-[#ECECEC] space-y-11">
+        <div class="min-w-72 sm:min-w-full bg-white border rounded-2xl border-[#ECECEC] space-y-11 relative">
           <!--Text-->
           <div class="pt-6 px-4 space-y-1.5">
             <p class="font-medium text">
@@ -396,7 +531,7 @@
           </div>
 
           <div
-            class="bg-[url(/post1.png)] h-37.5 bg-cover bg-center rounded-2xl bg-no-repeat px-4 pb-4.5 flex items-end"
+            class="bg-[url(/post1.png)] h-37.5 bg-cover bg-center rounded-2xl bg-no-repeat px-4 pb-4.5 flex items-end absolute bottom-0 w-full"
           >
             <button
               class="bg-[#00000099] flex gap-1.5 px-1.5 py-1.5 items-center rounded-full group"
@@ -428,7 +563,7 @@
 
         <!---->
         <div
-          class="bg-white border rounded-2xl border-[#ECECEC] space-y-11 flex flex-col justify-between"
+          class="min-w-72 sm:min-w-full bg-white border rounded-2xl border-[#ECECEC] space-y-11 flex flex-col justify-between"
         >
           <!--Text-->
           <div class="pt-6 px-4 space-y-1.5">
@@ -469,7 +604,7 @@
 
         <!---->
         <div
-          class="bg-white border rounded-2xl border-[#ECECEC] space-y-11 flex flex-col justify-between"
+          class="min-w-72 sm:min-w-full bg-white border rounded-2xl border-[#ECECEC] space-y-11 flex flex-col justify-between"
         >
           <!--Text-->
           <div class="pt-6 px-4 space-y-1.5">
@@ -506,7 +641,7 @@
         </div>
 
         <!---->
-        <div class="bg-white border rounded-2xl border-[#ECECEC] space-y-11">
+        <div class="min-w-72 sm:min-w-full bg-white border rounded-2xl border-[#ECECEC] space-y-11">
           <!--Text-->
           <div class="pt-6 px-4 space-y-1.5">
             <p class="font-medium text">
@@ -547,7 +682,7 @@
           </div>
         </div>
         <!---->
-        <div class="bg-white border rounded-2xl border-[#ECECEC] space-y-11">
+        <div class="min-w-72 sm:min-w-full bg-white border rounded-2xl border-[#ECECEC] space-y-11">
           <!--Text-->
           <div class="pt-6 px-4 space-y-1.5">
             <p class="font-medium text">
@@ -588,15 +723,15 @@
           </div>
         </div>
 
-        <div class="col-span-full flex justify-center mt-8">
-          <button class="primary-btn">See all posts</button>
-        </div>
+      </div>
+      <div class="flex justify-center mt-8">
+        <button class="primary-btn">See all posts</button>
       </div>
     </div>
 
     <!--Our partners-->
-    <div class="space-y-3 section mx-auto text-center pt-7">
-      <p class="text-primary text-2xl font-medium">Our Partners</p>
+    <div class="space-y-3 section mx-auto text-center pt-7 px-4">
+      <p class="text-primary text-xl sm:text-2xl font-medium">Our Partners</p>
 
       <div class="overflow-hidden">
         <div class="flex items-center gap-12 marquee">
@@ -691,18 +826,18 @@
     </div>
 
     <!--Contact us-->
-    <div class="space-y-3 text-center">
+    <div id="contact" class="space-y-3 text-center">
       <p class="text-2xl font-medium text-primary">Contact Us</p>
 
-      <div class="section mx-auto grid grid-cols-12 text-start">
+      <div class="section mx-auto grid grid-cols-12 text-start sm:pl-9 px-5">
         <!--col-span-9-->
-        <div class="bg-white rounded-2xl pl-12 py-12 col-span-9 h-fit">
-          <div class="max-w-lg space-y-6">
+        <div class="bg-white rounded-2xl px-4 py-5 sm:pl-12 sm:py-12 col-span-full sm:col-span-9 h-fit">
+          <div class="sm:max-w-lg space-y-6">
             <div class="space-y-0.5 pb-4 border-b border-[#DFE0E2] text-start">
-              <p class="text-lg font-medium text-primary">
+              <p class="text-base sm:text-lg font-medium text-primary">
                 How can we assist you <span class="text-xl"> today?</span>
               </p>
-              <p class="text-sm text">
+              <p class="text-xs sm:text-sm text">
                 Feel free to reach out to us with your inquiries.
               </p>
             </div>
@@ -743,11 +878,11 @@
           </div>
         </div>
 
-        <!--col-span-9-->
+        <!--col-span-3-->
         <div
-          class="col-span-3 bg-primary px-5.5 w-87.5 rounded-2xl mt-12 -ml-50 flex flex-col justify-center gap-4 py-5.5"
+          class="col-span-full sm:col-span-3 bg-primary px-5.5 w-87.5 rounded-2xl mt-4 sm:mt-12 sm:-ml-50 flex flex-col justify-center gap-4 py-5.5"
         >
-          <p class="text-xl font-medium">
+          <p class="text-lg sm:text-xl font-medium">
             Hi, we are always here to <br />
             assist you.
           </p>
