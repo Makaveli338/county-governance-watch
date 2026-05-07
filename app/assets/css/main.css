@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 @import "tailwindcss";
 
 @theme {
@@ -31,6 +33,12 @@
 
 .body {
   font-family: "Cabin", sans-serif;
+  font-optical-sizing: auto;
+}
+
+
+.font-playfair {
+  font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
 }
 
@@ -101,6 +109,9 @@
 
   input::placeholder {
     @apply capitalize;
+  }
+  .badge{
+    @apply px-9 py-2 text-xs font-medium text-primary rounded-full bg-[#E1F4EC]
   }
 }
 
