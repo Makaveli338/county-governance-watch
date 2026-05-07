@@ -10,5 +10,12 @@ export default defineNuxtConfig({
       tailwindcss(),
     ],
   },
+  app: {
+    head: {
+      link: [
+        { rel: 'icon', type: 'image/png', href: '/top-logo.png' }
+      ]
+    }
+  },
   ssr: false,
 })
