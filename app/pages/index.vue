@@ -49,11 +49,7 @@
             class="col-span-8 p-6 rounded-2xl bg-[#E3ECE9] text-primary block sm:hidden"
           >
             <p class="text-xl font-semibold text-center leading-7.5 col-span-1">
-              Join 1000+ <br />
-              people <br />
-              building a <br />
-              better <br />
-              tommorrow
+              400+ Youth engaged in governance dialogues
             </p>
           </div>
           <img
@@ -68,11 +64,10 @@
           class="col-span-1 p-6 rounded-2xl bg-[#E3ECE9] text-primary hidden sm:block"
         >
           <p class="text-xl font-semibold text-center leading-7.5">
-            Join 1000+ <br />
-            people <br />
-            building a <br />
-            better <br />
-            tommorrow
+            400+ <br />
+            Youth engaged in <br />
+            governance <br />
+            dialogues
           </p>
         </div>
 
@@ -84,20 +79,17 @@
         <!-- -->
         <div class="col-span-1 h-fit flex flex-col gap-2.5">
           <div
-            class="rounded-2xl px-10 bg-primary py-6 text-white text-xl h-fit sm:h-53.75 order-2 sm:order-1"
+            class="rounded-2xl px-10 bg-primary py-6 text-white text-xl h-fit sm:h-53.75 order-2 sm:order-1 flex items-center"
           >
-            <p class="leading-7.5 hidden sm:block">
-              Where citizens <br />
-              shape <br />
-              governance <br />
-              and service <br />
-              delivery.
+            <p class="leading-7.5 hidden sm:block text-center w-full">
+              12 Flagship <br />
+              tools and <br />
+              platforms <br />
+              rolled-out
             </p>
 
             <p class="leading-7.5 sm:hidden block text-center">
-              Where citizens shape <br />
-              governance and service <br />
-              delivery.
+              12 Flagship tools and platforms rolled-out
             </p>
           </div>
 
@@ -111,7 +103,8 @@
     </div>
 
     <!--Who we are-->
-    <div id="who_we_are"
+    <div
+      id="who_we_are"
       class="space-y-6 section mx-auto px-6 sm:overflow-x-visible flex flex-col sm:flex-row gap-6 sm:gap-13.5"
     >
       <div class="w-full sm:w-1/2 space-y-6">
@@ -1552,7 +1545,7 @@
       <div id="team" class="sm:space-y-16 space-y-5">
         <div class="w-full text-center flex flex-col items-center gap-2.5">
           <p class="text-xl sm:text-2xl font-medium text-primary font-playfair">
-            Meet Our Team
+            Meet The Team
           </p>
           <div class="w-20 bg-secondary h-1.5 rounded-full"></div>
         </div>
@@ -1637,7 +1630,9 @@
           </div>
 
           <!--Team members-->
-          <div class="flex flex-col sm:flex-row gap-2.5 sm:gap-4 mx-auto w-fit mt-2">
+          <div
+            class="flex flex-col sm:flex-row gap-2.5 sm:gap-4 mx-auto w-fit mt-2"
+          >
             <div class="flex gap-4">
               <!-- -->
               <div
