@@ -1,7 +1,10 @@
 <template>
-  <section class="px-6">
+  <section class="px-3 sm:px-6">
     <header
-      class="section sm:mx-auto px-4 py-3.5 rounded-full shadow-md flex items-center justify-between bg-white sm:mx-4.5"
+      :class="[
+        'section sm:mx-auto px-4 py-3.5 rounded-full shadow-md flex items-center justify-between sm:mx-4.5',
+        isResourcesPage ? 'bg-[#FFFFFF1A] border-l border-white' : 'bg-white',
+      ]"
     >
       <img src="/logo.svg" alt="" />
 
@@ -12,8 +15,12 @@
             @click="navigate"
             :class="
               isExactActive
-                ? 'py-3 px-7 border-b-2 border-primary text-primary font-semibold'
-                : 'text-[#1F2A2A] p-3 hover:text-primary-800'
+                ? isResourcesPage
+                  ? 'py-3 px-7 border-b-2 border-secondary text-secondary font-semibold'
+                  : 'py-3 px-7 border-b-2 border-primary text-primary font-semibold'
+                : isResourcesPage
+                  ? 'text-white p-3 hover:text-white/80'
+                  : 'text-[#1F2A2A] p-3 hover:text-primary-800'
             "
           >
             Home
@@ -21,9 +28,18 @@
         </NuxtLink>
 
         <!--About-->
-        <div class="relative" ref="dropdownRef" >
+        <div class="relative" ref="dropdownRef">
           <button
             @mouseenter="open"
+            :class="
+              isExactActive
+                ? isResourcesPage
+                  ? 'py-3 px-7 border-b-2 border-secondary text-secondary font-semibold'
+                  : 'py-3 px-7 border-b-2 border-primary text-primary font-semibold'
+                : isResourcesPage
+                  ? 'text-white p-3 hover:text-white/80'
+                  : 'text-[#1F2A2A] p-3 hover:text-primary-800'
+            "
             class="flex gap-1.5 items-center py-3 px-7 text-[#1F2A2A] p-3 hover:text-primary-800"
           >
             About us
@@ -46,59 +62,83 @@
             v-show="dropdownOpen"
             class="absolute mt-2 w-40 bg-white shadow rounded p-2"
           >
-          <ul class="list-none space-y-1.5">
-            <li>
-              <a href="#who_we_are" class="rounded-sm hover:bg-primary-700 p-2.5 text hover:text-white text-sm w-full! block">
-                Who we are
-              </a>
-            </li>
-             <li>
-              <a href="#strategy" class="rounded-sm hover:bg-primary-700 p-2.5 text hover:text-white text-sm w-full! block">
-              Our Strategy Focus
-              </a>
-            </li>
-             <li>
-              <a href="#programs" class="rounded-sm hover:bg-primary-700 p-2.5 text hover:text-white text-sm w-full! block">
-                Programme Areas
-              </a>
-            </li>
-             <li>
-              <a href="#flagship" class="rounded-sm hover:bg-primary-700 p-2.5 text hover:text-white text-sm w-full! block">
-                Flagship Initiatives
-              </a>
-            </li>
-             <li>
-              <a href="#impact" class="rounded-sm hover:bg-primary-700 p-2.5 text hover:text-white text-sm w-full! block">
-                Our Impact
-              </a>
-            </li>
-             <li>
-              <a href="#structure" class="rounded-sm hover:bg-primary-700 p-2.5 text hover:text-white text-sm w-full! block">
-               Our Structure
-              </a>
-            </li>
+            <ul class="list-none space-y-1.5">
+              <li>
+                <a
+                  href="#who_we_are"
+                  class="rounded-sm hover:bg-primary-700 p-2.5 text hover:text-white text-sm w-full! block"
+                >
+                  Who we are
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#strategy"
+                  class="rounded-sm hover:bg-primary-700 p-2.5 text hover:text-white text-sm w-full! block"
+                >
+                  Our Strategy Focus
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#programs"
+                  class="rounded-sm hover:bg-primary-700 p-2.5 text hover:text-white text-sm w-full! block"
+                >
+                  Programme Areas
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#flagship"
+                  class="rounded-sm hover:bg-primary-700 p-2.5 text hover:text-white text-sm w-full! block"
+                >
+                  Flagship Initiatives
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#impact"
+                  class="rounded-sm hover:bg-primary-700 p-2.5 text hover:text-white text-sm w-full! block"
+                >
+                  Our Impact
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#structure"
+                  class="rounded-sm hover:bg-primary-700 p-2.5 text hover:text-white text-sm w-full! block"
+                >
+                  Our Structure
+                </a>
+              </li>
 
-            <li>
-              <a href="#team" class="rounded-sm hover:bg-primary-700 p-2.5 text hover:text-white text-sm w-full! block">
-              The Team
-              </a>
-            </li>
-
-          </ul>
+              <li>
+                <a
+                  href="#team"
+                  class="rounded-sm hover:bg-primary-700 p-2.5 text hover:text-white text-sm w-full! block"
+                >
+                  The Team
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
 
-        <!--Blog-->
-        <NuxtLink to="/blog" custom v-slot="{ isExactActive, navigate }">
+        <!--Resources-->
+        <NuxtLink to="/resources" custom v-slot="{ isExactActive, navigate }">
           <button
             @click="navigate"
             :class="
               isExactActive
-                ? 'py-3 px-7 border-b-2 border-primary text-primary font-semibold'
-                : 'text-[#1F2A2A] p-3 hover:text-primary-800'
+                ? isResourcesPage
+                  ? 'py-3 px-7 border-b-2 border-secondary text-secondary font-semibold'
+                  : 'py-3 px-7 border-b-2 border-primary text-primary font-semibold'
+                : isResourcesPage
+                  ? 'text-white p-3 hover:text-white/80'
+                  : 'text-[#1F2A2A] p-3 hover:text-primary-800'
             "
           >
-            Blog
+            Resources
           </button>
         </NuxtLink>
 
@@ -108,8 +148,12 @@
             @click="navigate"
             :class="
               isExactActive
-                ? 'py-3 px-7 border-b-2 border-primary text-primary font-semibold'
-                : 'text-[#1F2A2A] p-3 hover:text-primary-800'
+                ? isResourcesPage
+                  ? 'py-3 px-7 border-b-2 border-secondary text-secondary font-semibold'
+                  : 'py-3 px-7 border-b-2 border-primary text-primary font-semibold'
+                : isResourcesPage
+                  ? 'text-white p-3 hover:text-white/80'
+                  : 'text-[#1F2A2A] p-3 hover:text-primary-800'
             "
           >
             Media
@@ -185,6 +229,66 @@
                   {{ link.label }}
                 </button>
               </NuxtLink>
+
+              <ul class="list-none space-y-1.5">
+                <li>
+                  <a
+                    href="#who_we_are"
+                    class="rounded-sm whitespace-nowrap hover:bg-primary-700 p-2.5 text hover:text-white text-sm w-full! block"
+                  >
+                    Who we are
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#strategy"
+                    class="rounded-sm whitespace-nowrap hover:bg-primary-700 p-2.5 text hover:text-white text-sm w-full! block"
+                  >
+                    Our Strategy Focus
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#programs"
+                    class="rounded-sm whitespace-nowrap hover:bg-primary-700 p-2.5 text hover:text-white text-sm w-full! block"
+                  >
+                    Programme Areas
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#flagship"
+                    class="rounded-sm whitespace-nowrap hover:bg-primary-700 p-2.5 text hover:text-white text-sm w-full! block"
+                  >
+                    Flagship Initiatives
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#impact"
+                    class="rounded-sm whitespace-nowrap hover:bg-primary-700 p-2.5 text hover:text-white text-sm w-full! block"
+                  >
+                    Our Impact
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#structure"
+                    class="rounded-sm whitespace-nowrap hover:bg-primary-700 p-2.5 text hover:text-white text-sm w-full! block"
+                  >
+                    Our Structure
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#team"
+                    class="rounded-sm whitespace-nowrap hover:bg-primary-700 p-2.5 text hover:text-white text-sm w-full! block"
+                  >
+                    The Team
+                  </a>
+                </li>
+              </ul>
             </div>
 
             <a href="#contact" class="secondary-btn w-fit ml-auto py-2!"
@@ -193,14 +297,32 @@
           </div>
         </div>
 
-        <a href="#contact" class="secondary-btn">Contact Us</a>
+        <div>
+           <!--Home-->
+        <NuxtLink v-if="isResourcesPage" :to="{ path: '/', hash: '#contact' }" custom v-slot="{ navigate }">
+          <button
+            @click="navigate"
+            class="primary-btn"
+          >
+            Contact us
+          </button>
+        </NuxtLink>
+
+          <a v-else href="#contact" class="secondary-btn">Contact Us</a>
+
+        </div>
+
       </div>
     </header>
   </section>
 </template>
 
 <script setup>
-import { ref, watch, onMounted, onBeforeUnmount } from "vue";
+import { ref, computed, watch, onMounted, onBeforeUnmount } from "vue";
+import { useRoute } from "vue-router";
+
+const route = useRoute();
+const isResourcesPage = computed(() => route.path === "/resources");
 
 const isOpen = ref(false);
 const dropdownOpen = ref(false);
@@ -209,6 +331,12 @@ let timeout = null;
 watch(isOpen, (val) => {
   document.body.style.overflow = val ? "hidden" : "";
 });
+
+const navLinks = [
+  { to: "/", label: "Home" },
+  { to: "/resources", label: "Resources" },
+  { to: "/media", label: "Media" },
+];
 
 const open = () => {
   clearTimeout(timeout);

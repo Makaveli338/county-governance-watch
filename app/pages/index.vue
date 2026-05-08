@@ -207,7 +207,7 @@
       </div>
 
       <!--Body-->
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-13.5 max-w-6xl mx-auto">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-13.5 max-w-6xl mx-auto">
         <div>
           <img src="/strategy.png" alt=" " />
         </div>
@@ -252,7 +252,7 @@
               </svg>
             </div>
 
-            <p class="-mt-1 text-primary leading-5.5 sm:whitespace-nowrap">
+            <p class="-mt-1 text-primary leading-5.5 lg:whitespace-nowrap whitespace-wrap">
               Empowering citizens through civic education and participation.
             </p>
           </div>
@@ -296,7 +296,7 @@
               </svg>
             </div>
 
-            <p class="-mt-1 text-primary leading-5.5 sm:whitespace-nowrap">
+            <p class="-mt-1 text-primary leading-5.5 lg:whitespace-nowrap whitespace-wrap">
               Strengthening inclusion of women, youth, persons with
               disabilities, and marginalised groups.
             </p>
@@ -341,7 +341,7 @@
               </svg>
             </div>
 
-            <p class="-mt-1 text-primary leading-5.5 sm:whitespace-nowrap">
+            <p class="-mt-1 text-primary leading-5.5 lg:whitespace-nowrap whitespace-wrap">
               Promoting transparency and accountability through evidence and
               advocacy.
             </p>
@@ -386,7 +386,7 @@
               </svg>
             </div>
 
-            <p class="-mt-1 text-primary leading-5.5 sm:whitespace-nowrap">
+            <p class="-mt-1 text-primary leading-5.5 lg:whitespace-nowrap whitespace-wrap">
               Tracking service delivery performance using CGI and CITA.
             </p>
           </div>
@@ -430,7 +430,7 @@
               </svg>
             </div>
 
-            <p class="-mt-1 text-primary leading-5.5 sm:whitespace-nowrap">
+            <p class="-mt-1 text-primary leading-5.5 lg:whitespace-nowrap whitespace-wrap">
               Advancing peace, human rights, and women’s participation in
               security.
             </p>
@@ -475,7 +475,7 @@
               </svg>
             </div>
 
-            <p class="-mt-1 text-primary leading-5.5 sm:whitespace-nowrap">
+            <p class="-mt-1 text-primary leading-5.5 lg:whitespace-nowrap whitespace-wrap">
               Integrating climate action and sustainability into governance.
             </p>
           </div>
@@ -519,7 +519,7 @@
               </svg>
             </div>
 
-            <p class="-mt-1 text-primary leading-5.5 sm:whitespace-nowrap">
+            <p class="-mt-1 text-primary leading-5.5 lg:whitespace-nowrap whitespace-wrap">
               Supporting youth leadership, employability, and innovation.
             </p>
           </div>
@@ -563,7 +563,7 @@
               </svg>
             </div>
 
-            <p class="-mt-1 text-primary leading-5.5 sm:whitespace-nowrap">
+            <p class="-mt-1 text-primary leading-5.5 lg:whitespace-nowrap whitespace-wrap">
               Mainstreaming gender equality across governance systems.
             </p>
           </div>
@@ -607,7 +607,7 @@
               </svg>
             </div>
 
-            <p class="-mt-1 text-primary leading-5.5 sm:whitespace-nowrap">
+            <p class="-mt-1 text-primary leading-5.5 lg:whitespace-nowrap whitespace-wrap">
               Strengthening CGW’s own institutional capacity and sustainability
             </p>
           </div>
@@ -680,7 +680,7 @@
             </p>
           </div>
 
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-primary">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-primary">
             <div
               class="bg-white rounded-2xl sm:h-37.5 flex gap-4 col-span-1 pr-6 overflow-hidden"
             >
@@ -820,7 +820,7 @@
       <div
         class="flex items-center justify-between flex-col sm:flex-row gap-3 sm:gap-8.5"
       >
-        <div class="flex items-center gap-3.5 w-fit sm:whitespace-nowrap">
+        <div class="flex items-center gap-3.5 w-fit lg:whitespace-nowrap whitespace-wrap">
           <div class="bg-secondary h-2.5 w-17.5"></div>
           <p
             class="text-primary text-2xl sm:text-4xl font-playfair font-medium"
@@ -1497,10 +1497,10 @@
       </div>
     </div>
 
-    <!--Organizational structure  && Meet the team-->
+    <!--Organizational structure & Meet the team-->
     <div class="space-y-20">
       <!--Organizational structure-->
-      <div id="structure" class="space-y-5 w-fit mx-auto">
+      <div id="structure" class="space-y-5 w-fit mx-auto px-6">
         <div class="space-y-2.5">
           <span
             class="px-6 py-2.5 rounded-full uppercase font-semibold bg-[#F7EFDE] text-[#D6B15E] mx-auto"
@@ -1542,7 +1542,7 @@
       </div>
 
       <!--Meet our team-->
-      <div id="team" class="sm:space-y-16 space-y-5">
+      <div id="team" class="sm:space-y-16 space-y-5 px-6" >
         <div class="w-full text-center flex flex-col items-center gap-2.5">
           <p class="text-xl sm:text-2xl font-medium text-primary font-playfair">
             Meet The Team
@@ -1633,10 +1633,10 @@
           <div
             class="flex flex-col sm:flex-row gap-2.5 sm:gap-4 mx-auto w-fit mt-2"
           >
-            <div class="flex gap-4">
+            <div class="flex gap-4 flex-col sm:flex-row">
               <!-- -->
               <div
-                class="bg-white border-[#ECECEC] rounded-2xl relative overflow-hidden h-82.5 w-59.5 flex items-end px-6 pb-9 transition-all duration-150 cursor-pointer"
+                class="bg-white border-[#ECECEC] rounded-2xl relative overflow-hidden h-82.5 w-40 lg:w-59.5 flex items-end px-6 pb-9 transition-all duration-150 cursor-pointer"
               >
                 <img src="/programs.png" alt="" class="absolute top-0 left-0" />
 
@@ -1648,7 +1648,7 @@
 
               <!-- -->
               <div
-                class="bg-white border-[#ECECEC] rounded-2xl relative overflow-hidden h-82.5 w-59.5 flex items-end px-6 pb-9 transition-all duration-150 cursor-pointer"
+                class="bg-white border-[#ECECEC] rounded-2xl relative overflow-hidden h-82.5 w-40 lg:w-59.5 flex items-end px-6 pb-9 transition-all duration-150 cursor-pointer"
               >
                 <img
                   src="/programs2.png"
@@ -1663,10 +1663,10 @@
               </div>
             </div>
 
-            <div class="flex gap-4">
+            <div class="flex gap-4 flex-col sm:flex-row">
               <!-- -->
               <div
-                class="bg-white border-[#ECECEC] rounded-2xl relative overflow-hidden h-82.5 w-59.5 flex items-end px-6 pb-9 transition-all duration-150 cursor-pointer"
+                class="bg-white border-[#ECECEC] rounded-2xl relative overflow-hidden h-82.5 w-40 lg:w-59.5 flex items-end px-6 pb-9 transition-all duration-150 cursor-pointer"
               >
                 <img
                   src="/programs3.png"
@@ -1682,7 +1682,7 @@
 
               <!-- -->
               <div
-                class="bg-white border-[#ECECEC] rounded-2xl relative overflow-hidden h-82.5 w-59.5 flex items-end px-6 pb-9 transition-all duration-150 cursor-pointer"
+                class="bg-white border-[#ECECEC] rounded-2xl relative overflow-hidden h-82.5 w-40 lg:w-59.5 flex items-end px-6 pb-9 transition-all duration-150 cursor-pointer"
               >
                 <img
                   src="/programs4.png"
@@ -1709,122 +1709,41 @@
       </div>
 
       <div
-        class="flex gap-4 sm:grid sm:grid-cols-5 overflow-x-auto sm:overflow-x-clip pb-2"
+        class="flex gap-4 lg:grid lg:grid-cols-5 overflow-x-auto lg:overflow-x-clip pb-2"
       >
         <!---->
         <div
-          class="min-w-72 sm:min-w-full bg-white border rounded-2xl border-[#ECECEC] space-y-11 relative"
+          class="min-w-72 lg:min-w-full lg:max-w-72 shrink-0 bg-white border rounded-2xl border-[#ECECEC] space-y-8 relative"
         >
           <!--Text-->
           <div class="pt-6 px-4 space-y-1.5">
-            <p class="font-medium text">
-              Unlocking The Power Of Women In Climate Action And Resilience
-            </p>
+            <p class="font-medium text">2024 - 2028 Strategic Plan</p>
             <p class="text-xs text-[#6F8F88]">Jan 14, 2026</p>
           </div>
 
           <div
-            class="bg-[url(/post1.png)] h-37.5 bg-cover bg-center rounded-2xl bg-no-repeat px-4 pb-4.5 flex items-end absolute bottom-0 w-full"
+            class="bg-[url(/post1.png)] h-37.5 bg-cover bg-center rounded-2xl bg-no-repeat px-4 pb-4.5 flex items-end w-full absolute bottom-0"
           >
-            <button
-              class="bg-[#00000099] flex gap-1.5 px-1.5 py-1.5 items-center rounded-full group"
-            >
-              <p class="text-xs font-medium">Read More</p>
-              <div
-                class="size-5 rounded-full bg-white flex items-center justify-center"
-              >
-                <svg
-                  class="group-hover:translate-x-0.5"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M3.33301 8.00016H12.6663M12.6663 8.00016L7.99967 3.3335M12.6663 8.00016L7.99967 12.6668"
-                    stroke="black"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </div>
-            </button>
-          </div>
-        </div>
-
-        <!---->
-        <div
-          class="min-w-72 sm:min-w-full bg-white border rounded-2xl border-[#ECECEC] space-y-11 flex flex-col justify-between"
-        >
-          <!--Text-->
-          <div class="pt-6 px-4 space-y-1.5">
-            <p class="font-medium text">GPPAC Experts Meeting 2016</p>
-            <p class="text-xs text-[#6F8F88]">Jan 14, 2026</p>
-          </div>
-
-          <div
-            class="bg-[url(/post2.png)] h-37.5 bg-cover bg-center rounded-2xl bg-no-repeat px-4 pb-4.5 flex items-end"
-          >
-            <button
-              class="bg-[#00000099] flex gap-1.5 px-1.5 py-1.5 items-center rounded-full group"
-            >
-              <p class="text-xs font-medium">Read More</p>
-              <div
-                class="size-5 rounded-full bg-white flex items-center justify-center"
-              >
-                <svg
-                  class="group-hover:translate-x-0.5"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M3.33301 8.00016H12.6663M12.6663 8.00016L7.99967 3.3335M12.6663 8.00016L7.99967 12.6668"
-                    stroke="black"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </div>
-            </button>
-          </div>
-        </div>
-
-        <!---->
-        <div
-          class="min-w-72 sm:min-w-full bg-white border rounded-2xl border-[#ECECEC] space-y-11 flex flex-col justify-between"
-        >
-          <!--Text-->
-          <div class="pt-6 px-4 space-y-1.5">
-            <p class="font-medium text">CGW Strategic Plan 2016-2021</p>
-            <p class="text-xs text-[#6F8F88]">Jan 14, 2026</p>
-          </div>
-
-          <div
-            class="bg-[url(/post3.png)] h-37.5 bg-cover bg-center rounded-2xl bg-no-repeat px-4 pb-4.5 flex items-end"
-          >
-            <button
-              class="bg-[#00000099] flex gap-1.5 px-1.5 py-1.5 items-center rounded-full group"
-            >
-              <p class="text-xs font-medium">Read More</p>
+            <button class="primary-btn px-10 py-2.5">
+              Preview
               <svg
-                class="group-hover:translate-x-0.5"
                 width="20"
                 height="20"
                 viewBox="0 0 20 20"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <rect width="20" height="20" rx="10" fill="white" />
                 <path
-                  d="M5.33301 10.0002H14.6663M14.6663 10.0002L9.99967 5.3335M14.6663 10.0002L9.99967 14.6668"
-                  stroke="black"
-                  stroke-width="2"
+                  d="M2.01677 10.5944C1.90328 10.4147 1.84654 10.3248 1.81477 10.1863C1.79091 10.0822 1.79091 9.918 1.81477 9.8139C1.84654 9.67532 1.90328 9.58547 2.01677 9.40577C2.95461 7.92078 5.74617 4.16675 10.0003 4.16675C14.2545 4.16675 17.0461 7.92078 17.9839 9.40577C18.0974 9.58547 18.1541 9.67532 18.1859 9.8139C18.2098 9.918 18.2098 10.0822 18.1859 10.1863C18.1541 10.3248 18.0974 10.4147 17.9839 10.5944C17.0461 12.0794 14.2545 15.8334 10.0003 15.8334C5.74617 15.8334 2.95461 12.0794 2.01677 10.5944Z"
+                  stroke="white"
+                  stroke-width="1.3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M10.0003 12.5001C11.381 12.5001 12.5003 11.3808 12.5003 10.0001C12.5003 8.61937 11.381 7.50008 10.0003 7.50008C8.61962 7.50008 7.50034 8.61937 7.50034 10.0001C7.50034 11.3808 8.61962 12.5001 10.0003 12.5001Z"
+                  stroke="white"
+                  stroke-width="1.3"
                   stroke-linecap="round"
                   stroke-linejoin="round"
                 />
@@ -1835,184 +1754,201 @@
 
         <!---->
         <div
-          class="min-w-72 sm:min-w-full bg-white border rounded-2xl border-[#ECECEC] space-y-11"
+          class="min-w-72 lg:min-w-full max-w-72 shrink-0 bg-white border rounded-2xl border-[#ECECEC] space-y-8 flex flex-col justify-between"
         >
           <!--Text-->
           <div class="pt-6 px-4 space-y-1.5">
-            <p class="font-medium text">
-              Mainstreaming Prevention Of Violent Extremism In Nairobi City
-              County Departments
-            </p>
+            <p class="font-medium text">Garrisa Job Fair and Exhibition</p>
             <p class="text-xs text-[#6F8F88]">Jan 14, 2026</p>
           </div>
 
           <div
-            class="bg-[url(/post4.png)] h-37.5 bg-cover bg-center rounded-2xl bg-no-repeat px-4 pb-4.5 flex items-end"
+            class="bg-[url(/post2.png)] h-37.5 bg-cover bg-center rounded-2xl bg-no-repeat px-4 pb-4.5 flex items-end"
           >
-            <button
-              class="bg-[#00000099] flex gap-1.5 px-1.5 py-1.5 items-center rounded-full group"
-            >
-              <p class="text-xs font-medium">Read More</p>
-              <div
-                class="size-5 rounded-full bg-white flex items-center justify-center"
+            <button class="primary-btn px-10 py-2.5">
+              Preview
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <svg
-                  class="group-hover:translate-x-0.5"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M3.33301 8.00016H12.6663M12.6663 8.00016L7.99967 3.3335M12.6663 8.00016L7.99967 12.6668"
-                    stroke="black"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </div>
+                <path
+                  d="M2.01677 10.5944C1.90328 10.4147 1.84654 10.3248 1.81477 10.1863C1.79091 10.0822 1.79091 9.918 1.81477 9.8139C1.84654 9.67532 1.90328 9.58547 2.01677 9.40577C2.95461 7.92078 5.74617 4.16675 10.0003 4.16675C14.2545 4.16675 17.0461 7.92078 17.9839 9.40577C18.0974 9.58547 18.1541 9.67532 18.1859 9.8139C18.2098 9.918 18.2098 10.0822 18.1859 10.1863C18.1541 10.3248 18.0974 10.4147 17.9839 10.5944C17.0461 12.0794 14.2545 15.8334 10.0003 15.8334C5.74617 15.8334 2.95461 12.0794 2.01677 10.5944Z"
+                  stroke="white"
+                  stroke-width="1.3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M10.0003 12.5001C11.381 12.5001 12.5003 11.3808 12.5003 10.0001C12.5003 8.61937 11.381 7.50008 10.0003 7.50008C8.61962 7.50008 7.50034 8.61937 7.50034 10.0001C7.50034 11.3808 8.61962 12.5001 10.0003 12.5001Z"
+                  stroke="white"
+                  stroke-width="1.3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
             </button>
           </div>
         </div>
+
         <!---->
         <div
-          class="min-w-72 sm:min-w-full bg-white border rounded-2xl border-[#ECECEC] space-y-11"
+          class="min-w-72 lg:min-w-full max-w-72 shrink-0 bg-white border rounded-2xl border-[#ECECEC] space-y-8 flex flex-col justify-between"
+        >
+          <!--Text-->
+          <div class="pt-6 px-4 space-y-1.5">
+            <p class="font-medium text">Boroughs Public Participation Report</p>
+            <p class="text-xs text-[#6F8F88]">Jan 14, 2026</p>
+          </div>
+
+          <div
+            class="bg-[url(/post3.png)] h-37.5 bg-cover bg-center rounded-2xl bg-no-repeat px-4 pb-4.5 flex items-end"
+          >
+            <button class="primary-btn px-10 py-2.5">
+              Preview
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2.01677 10.5944C1.90328 10.4147 1.84654 10.3248 1.81477 10.1863C1.79091 10.0822 1.79091 9.918 1.81477 9.8139C1.84654 9.67532 1.90328 9.58547 2.01677 9.40577C2.95461 7.92078 5.74617 4.16675 10.0003 4.16675C14.2545 4.16675 17.0461 7.92078 17.9839 9.40577C18.0974 9.58547 18.1541 9.67532 18.1859 9.8139C18.2098 9.918 18.2098 10.0822 18.1859 10.1863C18.1541 10.3248 18.0974 10.4147 17.9839 10.5944C17.0461 12.0794 14.2545 15.8334 10.0003 15.8334C5.74617 15.8334 2.95461 12.0794 2.01677 10.5944Z"
+                  stroke="white"
+                  stroke-width="1.3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M10.0003 12.5001C11.381 12.5001 12.5003 11.3808 12.5003 10.0001C12.5003 8.61937 11.381 7.50008 10.0003 7.50008C8.61962 7.50008 7.50034 8.61937 7.50034 10.0001C7.50034 11.3808 8.61962 12.5001 10.0003 12.5001Z"
+                  stroke="white"
+                  stroke-width="1.3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!---->
+        <div
+          class="min-w-72 lg:min-w-full max-w-72 shrink-0 bg-white border rounded-2xl border-[#ECECEC] space-y-8 relative"
         >
           <!--Text-->
           <div class="pt-6 px-4 space-y-1.5">
             <p class="font-medium text">
-              Tabasamu Peace and Social Cohesion Sessions in Kibra and Mathare
-              Sub-Counties
+             CLC Report 2024
             </p>
             <p class="text-xs text-[#6F8F88]">Jan 14, 2026</p>
           </div>
 
           <div
-            class="bg-[url(/post5.png)] h-37.5 bg-cover bg-center rounded-2xl bg-no-repeat px-4 pb-4.5 flex items-end"
+            class="bg-[url(/post4.png)] h-37.5 bg-cover bg-center rounded-2xl bg-no-repeat px-4 pb-4.5 flex items-end absolute bottom-0 w-full"
           >
-            <button
-              class="bg-[#00000099] flex gap-1.5 px-1.5 py-1.5 items-center rounded-full group"
-            >
-              <p class="text-xs font-medium">Read More</p>
-              <div
-                class="size-5 rounded-full bg-white flex items-center justify-center"
+            <button class="primary-btn px-10 py-2.5">
+              Preview
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <svg
-                  class="group-hover:translate-x-0.5"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M3.33301 8.00016H12.6663M12.6663 8.00016L7.99967 3.3335M12.6663 8.00016L7.99967 12.6668"
-                    stroke="black"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </div>
+                <path
+                  d="M2.01677 10.5944C1.90328 10.4147 1.84654 10.3248 1.81477 10.1863C1.79091 10.0822 1.79091 9.918 1.81477 9.8139C1.84654 9.67532 1.90328 9.58547 2.01677 9.40577C2.95461 7.92078 5.74617 4.16675 10.0003 4.16675C14.2545 4.16675 17.0461 7.92078 17.9839 9.40577C18.0974 9.58547 18.1541 9.67532 18.1859 9.8139C18.2098 9.918 18.2098 10.0822 18.1859 10.1863C18.1541 10.3248 18.0974 10.4147 17.9839 10.5944C17.0461 12.0794 14.2545 15.8334 10.0003 15.8334C5.74617 15.8334 2.95461 12.0794 2.01677 10.5944Z"
+                  stroke="white"
+                  stroke-width="1.3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M10.0003 12.5001C11.381 12.5001 12.5003 11.3808 12.5003 10.0001C12.5003 8.61937 11.381 7.50008 10.0003 7.50008C8.61962 7.50008 7.50034 8.61937 7.50034 10.0001C7.50034 11.3808 8.61962 12.5001 10.0003 12.5001Z"
+                  stroke="white"
+                  stroke-width="1.3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!---->
+        <div
+          class="max-w-72 shrink-0 bg-white border rounded-2xl border-[#ECECEC] space-y-8"
+        >
+          <!--Text-->
+          <div class="pt-6 px-4 space-y-1.5">
+            <p class="font-medium text">
+              Inaugural Regional Citizens’ Accounta...
+            </p>
+            <p class="text-xs text-[#6F8F88]">Jan 14, 2026</p>
+          </div>
+
+          <div
+            class="bg-[url(/post5.png)] h-37.5 bg-cover bg-center rounded-2xl bg-no-repeat px-4 pb-4.5 flex items-end "
+          >
+            <button class="primary-btn px-10 py-2.5">
+              Preview
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2.01677 10.5944C1.90328 10.4147 1.84654 10.3248 1.81477 10.1863C1.79091 10.0822 1.79091 9.918 1.81477 9.8139C1.84654 9.67532 1.90328 9.58547 2.01677 9.40577C2.95461 7.92078 5.74617 4.16675 10.0003 4.16675C14.2545 4.16675 17.0461 7.92078 17.9839 9.40577C18.0974 9.58547 18.1541 9.67532 18.1859 9.8139C18.2098 9.918 18.2098 10.0822 18.1859 10.1863C18.1541 10.3248 18.0974 10.4147 17.9839 10.5944C17.0461 12.0794 14.2545 15.8334 10.0003 15.8334C5.74617 15.8334 2.95461 12.0794 2.01677 10.5944Z"
+                  stroke="white"
+                  stroke-width="1.3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M10.0003 12.5001C11.381 12.5001 12.5003 11.3808 12.5003 10.0001C12.5003 8.61937 11.381 7.50008 10.0003 7.50008C8.61962 7.50008 7.50034 8.61937 7.50034 10.0001C7.50034 11.3808 8.61962 12.5001 10.0003 12.5001Z"
+                  stroke="white"
+                  stroke-width="1.3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
             </button>
           </div>
         </div>
       </div>
       <div class="flex justify-center mt-8">
-        <button class="primary-btn">See all posts</button>
+          <NuxtLink to="/resources" custom v-slot="{ navigate }">
+          <button
+            @click="navigate"
+            class="primary-btn"
+          >
+            See all Posts
+          </button>
+        </NuxtLink>
       </div>
     </div>
 
     <!--Our partners-->
     <div class="space-y-3 section mx-auto text-center pt-7 px-4">
-      <p class="text-primary text-xl sm:text-2xl font-medium">Our Partners</p>
+      <p class="text-primary text-xl sm:text-2xl font-medium font-playfair">Our Partners</p>
 
       <div class="overflow-hidden">
         <div class="flex items-center gap-12 marquee">
-          <!-- original set -->
           <img
-            src="/kiambu.svg"
-            alt="county govt of Kiambu"
+            v-for="p in partners"
+            :key="p.src"
+            :src="p.src"
+            :alt="p.alt"
             class="w-auto shrink-0"
           />
           <img
-            src="/city-council.svg"
-            alt="city council"
-            class="w-auto shrink-0"
-          />
-          <img src="/corps.svg" alt="mercy corps" class="w-auto shrink-0" />
-          <img
-            src="/auditor-general.svg"
-            alt="Office of the auditor general"
-            class="w-auto shrink-0"
-          />
-          <img
-            src="/kenya.svg"
-            alt="Republic of Kenya"
-            class="w-auto shrink-0"
-          />
-          <img
-            src="/ngaaf.svg"
-            alt="National government affirmative action fund"
-            class="w-auto shrink-0"
-          />
-          <img
-            src="/terrorism.svg"
-            alt="National counter terrorism center"
-            class="w-auto shrink-0"
-          />
-          <img
-            src="/disabilities.svg"
-            alt="National council for persons with disabilities"
-            class="w-auto shrink-0"
-          />
-          <!-- duplicate set for seamless loop -->
-          <img
-            src="/kiambu.svg"
-            alt=""
-            aria-hidden="true"
-            class="w-auto shrink-0"
-          />
-          <img
-            src="/city-council.svg"
-            alt=""
-            aria-hidden="true"
-            class="w-auto shrink-0"
-          />
-          <img
-            src="/corps.svg"
-            alt=""
-            aria-hidden="true"
-            class="w-auto shrink-0"
-          />
-          <img
-            src="/auditor-general.svg"
-            alt=""
-            aria-hidden="true"
-            class="w-auto shrink-0"
-          />
-          <img
-            src="/kenya.svg"
-            alt=""
-            aria-hidden="true"
-            class="w-auto shrink-0"
-          />
-          <img
-            src="/ngaaf.svg"
-            alt=""
-            aria-hidden="true"
-            class="w-auto shrink-0"
-          />
-          <img
-            src="/terrorism.svg"
-            alt=""
-            aria-hidden="true"
-            class="w-auto shrink-0"
-          />
-          <img
-            src="/disabilities.svg"
+            v-for="p in partners"
+            :key="`dup-${p.src}`"
+            :src="p.src"
             alt=""
             aria-hidden="true"
             class="w-auto shrink-0"
@@ -2023,12 +1959,12 @@
 
     <!--Contact us-->
     <div id="contact" class="space-y-3 text-center">
-      <p class="text-2xl font-medium text-primary">Contact Us</p>
+      <p class="text-2xl font-medium text-primary font-playfair">Contact Us</p>
 
       <div class="section mx-auto grid grid-cols-12 text-start sm:pl-9 px-5">
         <!--col-span-9-->
         <div
-          class="bg-white rounded-2xl px-4 py-5 sm:pl-12 sm:py-12 col-span-full sm:col-span-9 h-fit"
+          class="bg-white rounded-2xl px-4 py-5 sm:pl-12 sm:py-12 col-span-full sm:col-span-8 h-fit"
         >
           <div class="sm:max-w-lg space-y-6">
             <div class="space-y-0.5 pb-4 border-b border-[#DFE0E2] text-start">
@@ -2078,7 +2014,7 @@
 
         <!--col-span-3-->
         <div
-          class="col-span-full sm:col-span-3 bg-primary px-5.5 w-87.5 rounded-2xl mt-4 sm:mt-12 sm:-ml-50 flex flex-col justify-center gap-4 py-5.5"
+          class="col-span-full md:col-span-3  lg:col-span-4 bg-primary px-5.5 lg:w-120 rounded-2xl mt-4 sm:mt-12 sm:-ml-50 flex flex-col justify-center gap-4 py-5.5"
         >
           <p class="text-lg sm:text-xl font-medium">
             Hi, we are always here to <br />
@@ -2327,14 +2263,46 @@
   <Footer />
 </template>
 
-<script>
+<script setup>
 import Header from "~/components/Header.vue";
 import Footer from "~/components/Footer.vue";
+
+const partners = [
+  { src: '/kiambu.svg', alt: 'county govt of Kiambu' },
+  { src: '/city-council.svg', alt: 'city council' },
+  { src: '/corps.svg', alt: 'mercy corps' },
+  { src: '/auditor-general.svg', alt: 'Office of the auditor general' },
+  { src: '/kenya.svg', alt: 'Republic of Kenya' },
+  { src: '/ngaaf.svg', alt: 'National government affirmative action fund' },
+  { src: '/terrorism.svg', alt: 'National counter terrorism center' },
+  { src: '/assembly.png', alt: 'National Assembly' },
+  { src: '/ombudsman.png', alt: 'Office of the Ombudsman' },
+  { src: '/action-aid.png', alt: 'National council for persons with disabilities' },
+  { src: '/undp.png', alt: 'UNDP' },
+  { src: '/caf.png', alt: 'County Assemblies Forum' },
+  { src: '/british-high-commission.png', alt: 'British High Commission' },
+  { src: '/ford-foundation.png', alt: 'FORD Foundation' },
+  { src: '/CRA.png', alt: 'CRA' },
+  { src: '/fes.png', alt: 'Friedrich Ebert Stiftung' },
+  { src: '/kas.png', alt: 'Konrad Adenauer Stiftung' },
+  { src: '/Kajiado.png', alt: 'County Government of Kajiado' },
+  { src: '/IEBC.png', alt: 'IEBC' },
+  { src: '/KPCG.png', alt: 'Kenya Platform for Climate Governance' },
+  { src: '/ocob.png', alt: 'Office of the Controller of Budget' },
+  { src: '/PACJA.png', alt: 'PanAfrican Climate Justice Alliance' },
+  { src: '/tisa.png', alt: 'TISA' },
+  { src: '/reinvent.png', alt: 'Reinvent' },
+  { src: '/Oslo.png', alt: 'The Oslo Center' },
+  { src: '/VSO.png', alt: 'VSO' },
+  { src: '/tony-blair.png', alt: 'Tony Blair Institute for Global Change' },
+
+
+]
 </script>
 
 <style scoped>
 .marquee {
-  animation: marquee 20s linear infinite;
+  animation: marquee 50s linear infinite;
   width: max-content;
 }
 
