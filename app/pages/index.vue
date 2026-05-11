@@ -42,11 +42,11 @@
 
         <!-- -->
         <div
-          class="col-span-1 object-bottom grid grid-cols-12 items-stretch sm:block"
+          class="col-span-1 object-bottom grid grid-cols-12 items-stretch sm:block gap-2.5"
         >
           <!-- -->
           <div
-            class="col-span-8 p-6 rounded-2xl bg-[#E3ECE9] text-primary block sm:hidden"
+            class="sm:col-span-8 col-span-7 p-6 rounded-2xl bg-[#E3ECE9] text-primary block sm:hidden"
           >
             <p class="text-xl font-semibold text-center leading-7.5 col-span-1">
               400+ Youth engaged in governance dialogues
@@ -55,7 +55,7 @@
           <img
             src="/image2.png"
             alt="tug of war"
-            class="col-span-4 h-full object-cover rounded-2xl"
+            class="col-span-5 sm:col-span-4 h-full object-cover rounded-2xl"
           />
         </div>
 
